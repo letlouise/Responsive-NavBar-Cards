@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Louise Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assests/icon.png">
+</head>
+<body>
+    <nav class="sideBar">
+        <img src="assests/icon.png" alt="icon">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#hobby">Hobby</a></li>
+            <li><a href="#crush">Crush</a></li>
+        </ul>
+    </nav>
+        <nav class="navbar">
+            <img src="assests/icon.png" alt="icon">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobby">Hobby</a></li>
+                <li><a href="#crush">Crush</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+    <div class="container">
+        <div class="card" id="about">
+            <img src="assests/profile.jpg" alt="Me" width="100%">
+            <h2>John Louise Ancaja</h2>
+            <p>Web Designer</p>
+            <p>20</p>
+            <p>BSIT</p>
+        </div>
+        <div class="card" id="hobby">
+            <img src="assests/vball.jpg" alt="Hobby" width="100%">
+            <h2>Volleyball</h2>
+            <p>I play as a Middle Blocker</p>
+            <p>It's been 2 yrs since I Start</p>
+            <p>Also this is my happiness</p>
+        </div>
+        <div class="card" id="crush">
+            <img src="assests/crush.jpg" alt="Crush" width="100%">
+            <h2>Someone</h2>
+            <p>Someone special who inspires me every day!</p>
+            <p>20</p>
+            <p>BSED</p>
+        </div>
+    </div>
+</body>
+</html>

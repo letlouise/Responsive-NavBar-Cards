@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+}
+.sideBar {
+    display: none;
+}
+.navbar img {
+    width: 3%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    padding: 15px;
+    color: white;
+    margin-bottom: 20px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    padding: 20px;
+}
+.navbar ul li a:hover {
+    color: #000000;
+    background-color: rgb(183, 197, 252);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+.card {
+    background: rgb(177, 216, 241);
+    padding: 30px;
+    font-size: 18px;
+    margin: auto;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 20px;
+}
+@media (max-width: 1024px) {
+    .navbar img{
+        width: 6%;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7%;
+    }
+    .navbar ul {
+        display: flex;
+        list-style: none;
+    }
+    .card {
+        width: 25%;
+        margin: auto;
+        font-size: 90%;
+        padding: 25px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar img{
+        width: 8%;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar ul {
+        display: flex;
+        list-style: none;
+    }
+    .card {
+        width: 90%;
+        margin: 3%;
+    }
+}
+@media (max-width: 440px) {
+    .navbar {
+        display: none;
+    }
+    .sideBar img{
+        width: 14%;
+    }
+    .sideBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        background-color: #333;
+    }
+    .menu-toggle {
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        margin-top: 0;
+        list-style: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #333;
+        width: 30%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: none;
+    }
+
+    .nav-links li {
+        padding: 15px;
+        border-bottom: 1px solid #333;
+    }
+
+    .nav-links li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 15px;
+    }
+    .card {
+        width: 90%;
+        margin: 25px;
+    }
+}
